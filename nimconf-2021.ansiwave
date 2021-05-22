@@ -42,47 +42,47 @@ ANSIWAVE, a MIDI music + ANSI art editor:  https://github.com/oakes/ansiwave
 ParaMIDI represents music with data, not code!
 
 (piano, c, d, e)
-/piano c d e
+[0;30m/piano█c█d█e[0m
 
 You can change the instrument any time.
 
 (piano, c, d, organ, d, c)
-/piano c d /organ d c
+[0;30m/piano█c█d█/organ█d█c[0m
 
 You can change attributes such as note length.
 
 (piano, c, (length: 1/2), d, e)
-/piano c /length 1/2 d e
+[0;30m/piano█c█/length█1/2█d█e[0m
 
 Scope works just like you'd expect.
 
 (piano, c, ((length: 1/2), d), e)
-/piano c /length 1/2 d /length 1/4 e
+[0;30m/piano█c█/length█1/2█d█/length█1/4█e[0m
 
 Or more tersely...
 
 (piano, c, (1/2, d), e)
-/piano c 1/2 d 1/4 e
+[0;30m/piano█c█1/2█d█1/4█e[0m
 
 You can change the octave as well.
 
 (piano, c, d-1, e)
-/piano c d-1 e
+[0;30m/piano█c█d-1█e█[0m
 
 To make chords, put notes in a set.
 
 (piano, 1/2, {a, cx, e})
-/piano 1/2 a,c#,e
+[0;30m/piano█1/2█a,c#,e█[0m
 
 Chords can span multiple octaves.
 
 (piano, 1/2, {-d, d, +d, fx})
-/piano 1/2 d-,d,d+,f#
+[0;30m/piano█1/2█d-,d,d+,f#[0m
 
 With only these building blocks, you can make the following.
 
 (flute, 1/8, {d,-a,-d}, e, 1/4, fx, a, 1/8, fx, 1/4, e, 1/2, {d,-a,-d})
-/flute /8 d,a-,d- e /4 f# a /8 f# /4 e /2 d,a-,d-
+[0;30m/flute█/8█d,a-,d-█e█/4█f#█a█/8█f#█/4█e█/2█d,a-,d-[0m
 
 (piano,
   1/4, c, 1/2, {f,-f}, 1/8, a, f, 1/2, {a,-f},
@@ -96,7 +96,7 @@ With only these building blocks, you can make the following.
   baritone_sax,
   1/4, c, 1/2, {f,-f}, 1/8, a, f, 1/2, {a,-c},
   1/4, g, 1, {f,-f})
-/piano c /2 f,f- /8 a f /2 a,f- /4 g /2 f,a- /4 d /2 c,f- /harmonica 1/4 c /2 f,f- /8 a f /2 a,f- /8 g a /2 c-,c+ /violin 1/4 a /2 f-,c+ /8 a f /2 a,f- /4 g /2 f,a- /4 d /2 c,f- /baritone-sax 1/4 c /2 f,f- /8 a f /2 a,c- /4 g 1 f,f-
+[0;30m/piano█c█/2█f,f-█/8█a█f█/2█a,f-█/4█g█/2[0m [0;30mf,a-█/4█d█/2█c,f-█/harmonica█1/4█c█/2█f,f-█/8[0m [0;30ma█f█/2█a,f-█/8█g█a█/2█c-,c+█/violin█1/4█a█/2█f-,c+█/8█a█f█/2█a,f-█/4█g█/2█f,a-█/4[0m [0;30md█/2█c,f-█/baritone-sax█1/4█c█/2█f,f-█/8█a█f█/2█a,c-█/4█g█1█f,f-[0m
 
 Scores can also be written with Nim's JSON module.
 This is useful if you need to generate scores at runtime.
