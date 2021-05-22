@@ -95,6 +95,19 @@ With only these building blocks, you can make the following.
   1/4, g, 1, {f,-f})
 /violin c /2 f,f- /8 a f /2 a,f- /4 g /2 f,a- /4 d /2 c,f- 1/4 c /2 f,f- /8 a f /2 a,f- /8 g a /2 c-,c+ 1/4 a /2 f-,c+ /8 a f /2 a,f- /4 g /2 f,a- /4 d /2 c,f- 1/4 c /2 f,f- /8 a f /2 a,c- /4 g 1 f,f-
 
+Scores can also be written with Nim's JSON module.
+This is useful if you need to generate scores at runtime.
+
+%*["flute",
+   1/8, [{"mode":"concurrent"},"d","a-","d-"],
+   "e", 1/4, "f#", "a", 1/8, "f#", 1/4, "e",
+   1/2, [{"mode":"concurrent"},"d","a-","d-"]]
+
+One obvious use for paraMIDI is games.
+Most game developers have to use external tools for this.
+With paraMIDI your music is part of your game's source code.
+You can even use gameplay to affect the music dynamically.
+
 Check out some longer examples:
 https://github.com/paranim/paramidi/tree/master/examples
 
