@@ -69,6 +69,16 @@ You can change the octave as well.
 (piano, c, d-1, e)
 /piano c d-1 e
 
+To make chords, put notes in a set.
+
+(piano, 1/2, {a, cx, e})
+/piano 1/2 a,c#,e
+
+Chords can span multiple octaves.
+
+(piano, 1/2, {d-1, d, d+1, fx})
+/piano 1/2 d-1,d,d+1,f#
+
 
 ░█▀█░█▀█░█▀▀░▀█▀░█░█░█▀█░█░█░█▀▀
 ░█▀█░█░█░▀▀█░░█░░█▄█░█▀█░▀▄▀░█▀▀
