@@ -23,14 +23,54 @@
 ░▀░▀░░▀░░░░▀░░░▀░▀░▀▀▀░▀▀░░▀▀▀░▀▀▀░░▀░░▀▀▀
 
 
-Paranim, a game library: https://github.com/paranim/paranim
-Pararules, a rules engine: https://github.com/paranim/pararules
-Paravim, a text editor: https://github.com/paranim/paravim
-Vim³, a text editor for masochists: https://github.com/oakes/vim_cubed
+Paranim, a game library:             https://github.com/paranim/paranim
+Pararules, a rules engine:           https://github.com/paranim/pararules
+Paravim, a text editor:              https://github.com/paranim/paravim
+Vim³, a text editor for masochists:  https://github.com/oakes/vim_cubed
 
 ...but today, we're talking about music:
 
-ParaMIDI, a MIDI music library: https://github.com/paranim/paramidi
-ANSIWAVE, a MIDI music + ANSI art editor: https://github.com/oakes/ansiwave
+ParaMIDI, a MIDI music library:            https://github.com/paranim/paramidi
+ANSIWAVE, a MIDI music + ANSI art editor:  https://github.com/oakes/ansiwave
 
+
+░█▀█░█▀█░█▀▄░█▀█░█▄█░▀█▀░█▀▄░▀█▀
+░█▀▀░█▀█░█▀▄░█▀█░█░█░░█░░█░█░░█░
+░▀░░░▀░▀░▀░▀░▀░▀░▀░▀░▀▀▀░▀▀░░▀▀▀
+
+
+ParaMIDI represents music with data, not code!
+
+(piano, c, d, e)
+/piano c d e
+
+You can change the instrument any time.
+
+(piano, c, d, organ, d, c)
+/piano c d /organ d c
+
+You can change attributes such as note length.
+
+(piano, c, (length: 1/2), d, e)
+/piano c /length 1/2 d e
+
+Scope works just like you'd expect.
+
+(piano, c, ((length: 1/2), d), e)
+/piano c /length 1/2 d /length 1/4 e
+
+Or more tersely...
+
+(piano, c, (1/2, d), e)
+/piano c 1/2 d 1/4 e
+
+You can change the octave as well.
+
+(piano, c, d-1, e)
+/piano c d-1 e
+
+
+░█▀█░█▀█░█▀▀░▀█▀░█░█░█▀█░█░█░█▀▀
+░█▀█░█░█░▀▀█░░█░░█▄█░█▀█░▀▄▀░█▀▀
+░▀░▀░▀░▀░▀▀▀░▀▀▀░▀░▀░▀░▀░░▀░░▀▀▀
 
