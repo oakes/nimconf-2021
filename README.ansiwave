@@ -159,10 +159,10 @@ ANSIWAVE has a terse musical syntax. Go to the line and hit Tab to play:
 
 /flute /8 d,a-,d- e /4 f# a /8 f# /4 e /2 d,a-,d-
 
-/piano c /2 f,f- /8 a f /2 a,f- /4 g /2 f,a- /4 d /2 c,f-
-/harmonica 1/4 c /2 f,f- /8 a f /2 a,f- /8 g a /2 c-,c+
-/violin 1/4 a /2 f-,c+ /8 a f /2 a,f- /4 g /2 f,a- /4 d /2 c,f-
-/baritone-sax 1/4 c /2 f,f- /8 a f /2 a,c- /4 g 1 f,f-
+/piano        /4 c /2 f,f- /8 a f /2 a,f- /4 g /2 f,a- /4 d /2 c,f-
+/harmonica    /4 c /2 f,f- /8 a f /2 a,f- /8 g a /2 c-,c+
+/violin       /4 a /2 f-,c+ /8 a f /2 a,f- /4 g /2 f,a- /4 d /2 c,f-
+/baritone-sax /4 c /2 f,f- /8 a f /2 a,c- /4 g 1 f,f-
 
 You can also embed your music directly in your ANSI art:
 
